@@ -2,7 +2,7 @@ module Locomotive
   module CustomFieldsHelper
 
     def options_for_custom_field_type
-      %w(string text integer float boolean email date date_time file tags select belongs_to has_many many_to_many).map do |type|
+      %w(string text integer float boolean email date date_time file tags select belongs_to has_many many_to_many post_code).map do |type|
         [t("custom_fields.type.#{type}"), type]
       end
     end
